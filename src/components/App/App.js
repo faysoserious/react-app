@@ -7,7 +7,7 @@ import { SearchResults } from '../SearchResults/SearchResults';
 import { Playlists } from '../Playlists/Playlists';
 
 
-class App extends React.Component {
+export class App extends React.Component {
   constructor(props) {
     super(props);
 
@@ -15,7 +15,7 @@ class App extends React.Component {
       searchResults: [{name: 'name1', artist: 'artist1', album: 'album1', id: 1}, 
                       {name: 'name2', artist: 'artist2', album: 'album2', id: 2},
                       {name: 'name3', artist: 'artist3', album: 'album3', id: 3}]
-    }
+    };
   }
   render() {
     return (
@@ -24,7 +24,7 @@ class App extends React.Component {
         <div className="App">
           <SearchBar />
           <div className="App-playlist">
-            <SearchResults />
+            <SearchResults searchResults={this.state.searchResults} />
             <Playlists />
           </div>
         </div>
@@ -36,4 +36,4 @@ class App extends React.Component {
 
 
 
-export default App;
+
