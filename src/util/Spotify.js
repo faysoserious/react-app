@@ -2,7 +2,8 @@ import { SearchBar } from "../components/Searchbar/Searchbar";
 
 let userAccessToken;
 const clientID = '7365ee20eadf42b08cb2d3a018f42e2f';
-const redirectURL = 'http://localhost:3000/';
+const redirectURL = 'http://playlist_fei.surge.sh';
+//http://localhost:3000/
 const Spotify = {
     getAccessToken() {
         if (userAccessToken) {
