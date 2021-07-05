@@ -43,7 +43,7 @@ const Spotify = {
                     name: track.name,
                     artist: track.artists[0].name,
                     album: track.album.name,
-                    URL: track.url
+                    URI: track.uri
 
                 }))
             }
@@ -71,11 +71,11 @@ const Spotify = {
         );
         const jsonResponse_1 = await response_1.json();
         const playListID = jsonResponse_1.id;
-        return await fetch(`https://api.spotify.com/v1/me/playlists`,
+        return await fetch(`https://api.spotify.com/v1/playlists/${playListID}/tracks`,
             {
                 headers: headers,
                 method: 'POST',
-                body: JSON.stringify({ URIs: trackURIs })
+                body: JSON.stringify({ uris: trackURIs })
             });
 
     }
