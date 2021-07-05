@@ -1,6 +1,6 @@
 # React app - Jammming (Codecademy)
 
-This project uses Spotify WEB API to browse music and select songs for customized playlist into Spotify. account.
+[This project](http://playlist_fei.surge.sh/) uses Spotify WEB API to browse music and select songs for customized playlist into Spotify. account.
 
 ### The flow:
 
